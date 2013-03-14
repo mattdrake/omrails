@@ -1,8 +1,9 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.1'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'simple_form'
 
 group :production do
 	gem 'pg'
