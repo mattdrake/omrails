@@ -4,6 +4,9 @@ gem 'rails', '3.2.1'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "cocaine"
+
 
 group :production do
 	gem 'pg'
