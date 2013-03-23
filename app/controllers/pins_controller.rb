@@ -36,7 +36,7 @@ class PinsController < ApplicationController
 
   # GET /pins/1/edit
   def edit
-    @pin = current_user.pins.find(params[:id])
+    @pin = Pin.all(params[:id])
   end
 
   # POST /pins
