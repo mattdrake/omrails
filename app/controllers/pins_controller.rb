@@ -15,7 +15,7 @@ class PinsController < ApplicationController
   # GET /pins/1
   # GET /pins/1.json
   def show
-    @pin = Pin.find(params[:id])
+    @pin = Pin.all
 
     respond_to do |format|
       format.html # show.html.erb
@@ -26,7 +26,7 @@ class PinsController < ApplicationController
   # GET /pins/new
   # GET /pins/new.json
   def new
-    @pin = current_user.pins.new
+    @pin = Pin.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,7 +42,7 @@ class PinsController < ApplicationController
   # POST /pins
   # POST /pins.json
   def create
-    @pin = current_user.pins.new(params[:pin])
+    @pin = Pin.all
 
     respond_to do |format|
       if @pin.save
@@ -74,7 +74,7 @@ class PinsController < ApplicationController
   # DELETE /pins/1
   # DELETE /pins/1.json
   def destroy
-    @pin = current_user.pins.find(params[:id])
+    @pin = Pin.all
     @pin.destroy
 
     respond_to do |format|
