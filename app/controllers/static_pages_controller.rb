@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  def pins
+  def home
   end
 
   def about
