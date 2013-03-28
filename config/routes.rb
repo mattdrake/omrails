@@ -2,7 +2,7 @@ Omrails::Application.routes.draw do
 
   resources :pins
 
-  root :to => 'static_pages#home'
+  root :to => 'pins#index'
   
   devise_for :users
 
