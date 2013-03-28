@@ -6,7 +6,7 @@ Omrails::Application.routes.draw do
   
   get "about" => "static_pages#about"
   
-  root :to => 'static_pages#home'
+  root :to => 'pins#index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
