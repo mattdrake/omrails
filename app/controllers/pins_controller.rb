@@ -61,7 +61,7 @@ class PinsController < ApplicationController
     @pin = current_user.pins.find(params[:id])
 
     respond_to do |format|
-      if @pin.update_attributes(params[:id])
+      if @pin.update_attributes(params[:pin])
         format.html { redirect_to @pin, notice: 'Pin was successfully updated.' }
         format.json { head :no_content }
       else
