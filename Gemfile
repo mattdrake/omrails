@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "cocaine"
+gem 'aws-sdk'
 
 
 group :production do

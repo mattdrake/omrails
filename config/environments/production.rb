@@ -66,4 +66,15 @@ Omrails::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # Configuring Amazon S3 for Paperclip file uploads. 
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['Onemonthrails'],
+      :access_key_id => ENV['AKIAIRBCKQEHN4THWLNA'],
+      :secret_access_key => ENV['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']
+    }
+  }
+
 end
