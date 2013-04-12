@@ -75,7 +75,7 @@ p {
   text-decoration: none;
 }
 
-/* Required for fQuery Masonry */
+/* Required for jQuery Masonry */
 
 .box {
   margin: 5px;
@@ -97,4 +97,8 @@ p {
   -moz-border-radius: 5px;
   border-radius: 5px;
 
+}
+
+.description {
+    margin: 10px 0 5px;
 }
